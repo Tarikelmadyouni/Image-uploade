@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
- Route::post('/images', 'UploadsController@store');
+Route::get('/','UploadsController@index');
+
+Route::delete('/images/{imageUpload}', 'UploadsController@destroy');
+
+
+
+
+

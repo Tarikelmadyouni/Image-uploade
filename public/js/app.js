@@ -1919,6 +1919,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -1928,7 +1931,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.dropzone = new dropzone__WEBPACK_IMPORTED_MODULE_0___default.a(this.$refs.imageUpload, {
-      url: '/images'
+      url: '/api/images'
     });
   }
 });
@@ -23078,17 +23081,19 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", {
-      ref: "imageUpload",
-      staticClass: "row justify-content-center mb-3"
-    }),
-    _vm._v(" "),
     _c(
       "div",
-      {
-        staticClass: "col-12 bg-dark text-white rounded py-3 my-2 text-center"
-      },
-      [_vm._v("DROPE IMAGE(S) HERE")]
+      { ref: "imageUpload", staticClass: "row justify-content-center mb-3" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "col-12 bg-dark text-white rounded py-3 my-2 text-center"
+          },
+          [_vm._v("DEPOSER IMAGE(S) ICI\n        ")]
+        )
+      ]
     )
   ])
 }

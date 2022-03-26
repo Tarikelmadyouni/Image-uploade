@@ -25,6 +25,6 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "minimist": "^1.2.5"
+        "minimist": "^1.2.6"
     }
 }
